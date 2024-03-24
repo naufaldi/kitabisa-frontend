@@ -2,7 +2,10 @@ export enum CampaignerType {
   Personal = 'PERSONAL',
   Organization = 'ORGANIZATION',
 }
-
+export enum SortCriteria {
+  Ascending = 'ascending',
+  Descending = 'descending',
+}
 export type ResponseDataListCampaign = {
   response_code: string;
   response_desc: ResponseDesc;

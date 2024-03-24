@@ -11,8 +11,6 @@ type CardProps = {
 };
 
 const Card = ({ data }: CardProps) => {
-  // console.log('data', data);
-
   const {
     image,
     title,
@@ -28,13 +26,7 @@ const Card = ({ data }: CardProps) => {
   return (
     <div className="flex flex-col">
       <div className="w-full h-[200px] relative sm:h-[250px] overflow-hidden mb-4">
-        <Image
-          src={image}
-          alt={title}
-          objectFit="cover"
-          objectPosition="center"
-          layout="fill"
-        />
+        <Image src={image} alt={title} className="object-cover" fill />
       </div>
       <div className="flex flex-col gap-2 justify-between h-auto sm:h-[140px]">
         <h2 className="text-xl font-bold antialiased capitalize">{title}</h2>
