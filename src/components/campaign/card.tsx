@@ -24,7 +24,7 @@ const Card = ({ data }: CardProps) => {
   const achieved = checkIfDonationAchieved(donationTarget, donationReceived);
   const rupiah = formatToIDR(donationReceived);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" data-testid="mockCard">
       <div className="w-full h-[200px] relative sm:h-[250px] overflow-hidden mb-4">
         <Image src={image} alt={title} className="object-cover" fill />
       </div>

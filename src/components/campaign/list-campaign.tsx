@@ -24,8 +24,6 @@ const ListCampaign = ({ dataCampaign }: ListCampaignProps) => {
 
     return dataCampaign;
   }, [dataCampaign, sortCriteria]);
-  console.log('dataCampaign', dataCampaign);
-  console.log('sortCriteria', sortCriteria);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-8">
