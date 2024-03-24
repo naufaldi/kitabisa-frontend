@@ -1,5 +1,3 @@
-Certainly! Here's a README.md template for your repository based on our previous discussions and the live website reference:
-
 # Kitabisa Frontend
 
 This repository contains the frontend codebase for the crowdfunding platform Kitabisa, Indonesia's leading platform for fundraising and charity. The website is designed to facilitate the discovery and support of various social campaigns across Indonesia, encouraging community participation and collective action towards positive causes.
