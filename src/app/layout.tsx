@@ -4,24 +4,29 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Kita Bisa ',
-  description: 'Kita Bisa Campaign List ',
-  metadataBase: new URL('https://reading-list-iota.vercel.app/'),
+  title: 'Kitabisa.com - Bersama, Kita Bisa!',
+  description:
+    'Bergabunglah dalam gerakan crowdfunding untuk berbagai kampanye sosial di Indonesia. Bersama, kita dapat membuat perbedaan!',
+  metadataBase: new URL('https://kitabisa.com/'),
   authors: [
-    { name: 'Naufaldi', url: 'https://www.linkedin.com/in/naufaldirafif/' },
+    { name: 'Tim Kitabisa', url: 'https://www.kitabisa.com/tentang-kami' },
   ],
-  keywords: ['kitabisa', 'campaign'],
+  keywords: ['kitabisa', 'crowdfunding', 'donasi', 'sosial', 'Indonesia'],
   openGraph: {
-    title: 'Kita Bisa',
-    description: 'Kita Bisa Campaign List',
-    url: 'https://reading-list-iota.vercel.app/',
+    title: 'Kitabisa.com - Bersama, Kita Bisa!',
+    description:
+      'Temukan dan dukung berbagai kampanye sosial di Indonesia melalui Kitabisa.com, platform crowdfunding #1 di Indonesia.',
+    url: 'https://kitabisa.com/',
     type: 'website',
+    images: 'https://kitabisa.com/og.png', // Assuming you have an Open Graph image
   },
   twitter: {
     site: '@kitabisa',
-    description: 'Kita Bisa Campaign List',
-    title: 'Kita Bisa Campaig',
-    creator: '@f2aldi',
+    description:
+      'Dukung berbagai kampanye sosial di Indonesia melalui Kitabisa.com. Bersama, kita dapat membuat perbedaan!',
+    title: 'Kitabisa.com - Bersama, Kita Bisa!',
+    creator: '@kitabisa',
+    images: 'https://kitabisa.com/og.png', // Assuming you have a Twitter card image
   },
 };
 

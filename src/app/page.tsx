@@ -10,8 +10,8 @@ export default async function Home() {
   const listCampaign = await getListCampaign();
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-start px-4 sm:px-0  max-w-screen-xl mx-auto">
-      <header className="flex justify-between items-center w-full mb-10 my-4 px-4">
+    <div className="flex min-h-screen flex-col items-center justify-start p-4 sm:p-0  max-w-screen-xl mx-auto">
+      <header className="flex flex-col sm:flex-row gap-4 justify-between items-center w-full mb-10 my-4 sm:px-4">
         <Link href="/" className="flex gap-4 items-center">
           <Image
             src={LogoKitabisa}
@@ -19,7 +19,7 @@ export default async function Home() {
             width={50}
             height={50}
           />
-          <h3 className="text-lg font-bold">Kita Bisa</h3>
+          <h3 className="text base sm:text-lg font-bold">Kita Bisa</h3>
         </Link>
         <Sorting />
       </header>
