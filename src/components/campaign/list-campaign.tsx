@@ -26,7 +26,7 @@ const ListCampaign = ({ dataCampaign }: ListCampaignProps) => {
   }, [dataCampaign, sortCriteria]);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-8">
+    <div className="px-4 xl:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8">
       {sortedCampaigns.map((data) => (
         <Card data={data} key={data.id} />
       ))}

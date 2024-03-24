@@ -7,18 +7,16 @@ export const metadata: Metadata = {
   title: 'Kitabisa.com - Bersama, Kita Bisa!',
   description:
     'Bergabunglah dalam gerakan crowdfunding untuk berbagai kampanye sosial di Indonesia. Bersama, kita dapat membuat perbedaan!',
-  metadataBase: new URL('https://kitabisa.com/'),
-  authors: [
-    { name: 'Tim Kitabisa', url: 'https://www.kitabisa.com/tentang-kami' },
-  ],
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
+  authors: [{ name: 'Tim Kitabisa', url: 'https://www.kitabisa.com/about-us' }],
   keywords: ['kitabisa', 'crowdfunding', 'donasi', 'sosial', 'Indonesia'],
   openGraph: {
     title: 'Kitabisa.com - Bersama, Kita Bisa!',
     description:
       'Temukan dan dukung berbagai kampanye sosial di Indonesia melalui Kitabisa.com, platform crowdfunding #1 di Indonesia.',
-    url: 'https://kitabisa.com/',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}`,
     type: 'website',
-    images: 'https://kitabisa.com/og.png', // Assuming you have an Open Graph image
+    images: `${process.env.NEXT_PUBLIC_SITE_URL}/og.png`, // Assuming you have an Open Graph image
   },
   twitter: {
     site: '@kitabisa',
@@ -26,7 +24,7 @@ export const metadata: Metadata = {
       'Dukung berbagai kampanye sosial di Indonesia melalui Kitabisa.com. Bersama, kita dapat membuat perbedaan!',
     title: 'Kitabisa.com - Bersama, Kita Bisa!',
     creator: '@kitabisa',
-    images: 'https://kitabisa.com/og.png', // Assuming you have a Twitter card image
+    images: '${process.env.NEXT_PUBLIC_SITE_URL}og.png', // Assuming you have a Twitter card image
   },
 };
 
